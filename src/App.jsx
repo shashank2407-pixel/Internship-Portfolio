@@ -12,7 +12,7 @@ import "./App.css";
 
 function App() {
 
-  const [lightMode, setLightMode] = useState(falsegi);
+  const [lightMode, setLightMode] = useState(false);
 
   return (
     <div className={lightMode ? "app light-theme" : "app dark-theme"}>
