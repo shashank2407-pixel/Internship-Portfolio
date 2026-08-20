@@ -1,0 +1,1143 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #111827;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #111827;
+  color: aliceblue;
+
+  padding: 15px 40px;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 40px;
+  color: aliceblue;
+  font-weight: 600;
+
+  font-family:
+    "Gill Sans",
+    "Gill Sans MT",
+    Calibri,
+    "Trebuchet MS",
+    sans-serif;
+}
+
+.navlinks {
+  display: flex;
+  list-style: none;
+
+  font-size: 20px;
+  gap: 60px;
+  font-weight: 600;
+}
+
+.navlinks a {
+  color: aliceblue;
+  text-decoration: none;
+
+  transition: 0.25s ease;
+}
+
+.navlinks a:hover {
+  color: #06b6d4;
+}
+
+
+/* =========================================
+   THEME BUTTON
+========================================= */
+
+.theme-toggle {
+  cursor: pointer;
+
+  border: none;
+  background: transparent;
+
+  font-size: 22px;
+  padding: 5px 10px;
+
+  transition: 0.25s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.15);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+#Hero {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ),
+    url("/images/download (1).jpg");
+
+  padding: 150px 30px;
+
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+}
+
+#Hero h1 {
+  font-size: 60px;
+
+  font-family:
+    "Gill Sans",
+    "Gill Sans MT",
+    Calibri,
+    "Trebuchet MS",
+    sans-serif;
+
+  margin-bottom: 20px;
+
+  animation: fadeInUp 1s ease;
+}
+
+#Hero p {
+  font-size: 20px;
+
+  margin-bottom: 30px;
+
+  animation: fadeInUp 2s ease;
+}
+
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes fadeInUp {
+
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/* =========================================
+   HERO BUTTONS
+========================================= */
+
+.mywork {
+  animation: fadeInUp 3s ease;
+
+  display: flex;
+  justify-content: center;
+
+  font-size: 20px;
+
+  gap: 20px;
+
+  font-weight: 600;
+}
+
+.mywork a {
+  color: black;
+
+  text-decoration: none;
+
+  padding: 10px 20px;
+
+  border-radius: 5px;
+
+  transition: 0.3s ease;
+}
+
+.primary-button {
+  border: 2px solid #111827;
+}
+
+.secondary-button {
+  border: 2px solid #111827;
+}
+
+.primary-button:hover {
+  color: #ffffff;
+  background-color: #111827;
+}
+
+.secondary-button:hover {
+  color: #ffffff;
+  background-color: #111827;
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+#about {
+  background-color: #111827;
+
+  text-align: center;
+
+  padding: 80px 40px;
+
+  color: aliceblue;
+}
+
+#about h2 {
+  color: aliceblue;
+
+  font-size: 40px;
+
+  font-family:
+    "Gill Sans",
+    "Gill Sans MT",
+    Calibri,
+    "Trebuchet MS",
+    sans-serif;
+
+  margin-bottom: 50px;
+}
+
+.about-content {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 100px;
+
+  max-width: 1000px;
+
+  margin: auto;
+}
+
+.profile-picture {
+  color: aliceblue;
+
+  margin: 0;
+}
+
+.profile-picture img {
+  width: 200px;
+  height: 200px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 4px solid #06b6d4;
+
+  transition: 0.3s ease;
+}
+
+.profile-picture img:hover {
+  transform: scale(1.05);
+}
+
+.profile-picture figcaption {
+  margin-top: 10px;
+}
+
+.about-text {
+  max-width: 500px;
+
+  color: aliceblue;
+
+  font-size: 25px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    Times,
+    serif;
+
+  line-height: 1.6;
+
+  text-align: left;
+}
+
+
+/* =========================================
+   SKILLS
+========================================= */
+
+#skill {
+  background-color: gray;
+
+  text-align: center;
+
+  padding: 80px 40px;
+}
+
+#skill h2 {
+  font-size: 40px;
+
+  font-family:
+    "Gill Sans",
+    "Gill Sans MT",
+    Calibri,
+    "Trebuchet MS",
+    sans-serif;
+
+  margin-bottom: 40px;
+}
+
+.skill-grid {
+  display: flex;
+
+  justify-content: center;
+
+  padding-bottom: 20px;
+
+  margin-top: 20px;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  border: 2px solid #111827;
+
+  padding: 12px 25px;
+
+  border-radius: 5px;
+
+  transition: 0.3s ease;
+
+  font-weight: 600;
+}
+
+.skill-item:hover {
+  background-color: #111827;
+
+  color: aliceblue;
+
+  transform: translateY(-5px);
+}
+
+
+/* =========================================
+   PROJECTS
+========================================= */
+
+.project {
+  display: flex;
+
+  justify-content: space-evenly;
+
+  background-color: #111827;
+
+  flex-direction: column;
+
+  color: aliceblue;
+
+  padding: 80px 40px;
+}
+
+.project h2 {
+  text-align: center;
+
+  font-size: 40px;
+
+  font-family:
+    "Gill Sans",
+    "Gill Sans MT",
+    Calibri,
+    "Trebuchet MS",
+    sans-serif;
+
+  color: aliceblue;
+
+  margin-bottom: 20px;
+}
+
+
+/* Project container */
+
+.Project-grid {
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  gap: 50px;
+
+  text-align: center;
+
+  padding: 30px;
+
+  flex-wrap: wrap;
+}
+
+
+/* Project card */
+
+.project-card {
+  border: 2px solid darkblue;
+
+  background-color: darkblue;
+
+  border-radius: 20px;
+
+  padding: 20px;
+
+  width: 265px;
+
+  transition: 0.3s ease;
+}
+
+.project-card img {
+  height: 200px;
+
+  width: 100%;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  margin-bottom: 15px;
+}
+
+.project-card:hover {
+  border: 2px solid darkblue;
+
+  background-color: transparent;
+
+  border-radius: 20px;
+
+  transform: translateY(-8px);
+}
+
+.project-card h3 {
+  color: aliceblue;
+
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: aliceblue;
+
+  margin-bottom: 15px;
+}
+
+.project-tags {
+  color: aliceblue;
+
+  margin-bottom: 20px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  flex-wrap: wrap;
+}
+
+.tag {
+  border: 1px solid #06b6d4;
+
+  border-radius: 20px;
+
+  padding: 4px 10px;
+
+  font-size: 13px;
+}
+
+.project-card h3:hover {
+  color: darkblue;
+}
+
+
+/* =========================================
+   PROJECT BUTTONS
+========================================= */
+
+.project-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.btn {
+  color: rgb(42, 7, 33);
+
+  text-decoration: none;
+
+  border: 2px solid darkred;
+
+  padding: 8px 12px;
+
+  border-radius: 8px;
+
+  background-color: rgb(9, 229, 177);
+
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+#Contact {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url("/images/download.jpg");
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-position: center;
+
+  min-height: 75vh;
+
+  padding: 80px 40px;
+}
+
+.contact-section h2 {
+  color: white;
+
+  font-size: 30px;
+
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+#contact-form {
+  width: 100%;
+
+  max-width: 600px;
+
+  margin: 0 auto;
+
+  padding: 30px;
+
+  background: rgba(17, 24, 39, 0.8);
+
+  border-radius: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+
+  font-weight: bold;
+
+  display: block;
+}
+
+.form-group label {
+  display: block;
+
+  color: white;
+
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+
+  padding: 14px;
+
+  border: 2px solid lightblue;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  font-family: inherit;
+
+  transition: 0.3s ease;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+
+  border-color: aqua;
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+  border-color: aqua;
+}
+
+
+/* Submit button */
+
+#submit {
+  padding: 12px 25px;
+
+  border-radius: 8px;
+
+  background-color: aqua;
+
+  border: none;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  display: block;
+
+  margin: 20px auto 0;
+
+  transition: 0.3s ease;
+}
+
+#submit:hover {
+  background-color: transparent;
+
+  border: 2px solid aqua;
+
+  color: white;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+  text-align: center;
+
+  background-color: #111827;
+
+  color: aliceblue;
+
+  padding: 60px;
+}
+
+footer p {
+  font-size: 15px;
+
+  font-family:
+    "Gill Sans",
+    "Gill Sans MT",
+    Calibri,
+    "Trebuchet MS",
+    sans-serif;
+
+  margin-bottom: 15px;
+}
+
+footer nav {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+}
+
+footer a {
+  color: aliceblue;
+
+  text-decoration: none;
+
+  padding: 10px;
+
+  transition: 0.3s ease;
+}
+
+footer a:hover {
+  color: #06b6d4;
+}
+
+
+/* =========================================
+   LIGHT THEME
+   SOFT MORNING BLUE
+========================================= */
+
+body.light-theme,
+.light-theme {
+  background-color: #eaf2f8;
+
+  color: #243447;
+}
+
+
+/* =========================================
+   LIGHT NAVBAR
+========================================= */
+
+.light-theme .navbar {
+  background-color: #d9eaf3;
+
+  color: #243447;
+
+  box-shadow:
+    0 3px 15px
+    rgba(36, 52, 71, 0.12);
+}
+
+.light-theme .logo {
+  color: #243447;
+}
+
+.light-theme .navlinks a {
+  color: #243447;
+}
+
+.light-theme .navlinks a:hover {
+  color: #4f86c6;
+}
+
+.light-theme .theme-toggle {
+  color: #243447;
+
+  background-color: transparent;
+}
+
+
+/* =========================================
+   LIGHT HERO
+========================================= */
+
+.light-theme #Hero {
+  background-image:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(79, 134, 198, 0.18),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #eaf2f8,
+      #e8eaf6
+    );
+
+  color: #243447;
+}
+
+.light-theme #Hero h1 {
+  color: #243447;
+}
+
+.light-theme #Hero p {
+  color: #52677a;
+}
+
+
+/* =========================================
+   LIGHT HERO BUTTONS
+========================================= */
+
+.light-theme .mywork a {
+  color: #243447;
+
+  border-color: #4f86c6;
+}
+
+.light-theme .primary-button:hover,
+.light-theme .secondary-button:hover {
+  background-color: #4f86c6;
+
+  border-color: #4f86c6;
+
+  color: white;
+}
+
+
+/* =========================================
+   LIGHT ABOUT
+========================================= */
+
+.light-theme #about {
+  background-color: #e4eef5;
+
+  color: #243447;
+}
+
+.light-theme #about h2 {
+  color: #243447;
+}
+
+.light-theme .about-text {
+  color: #52677a;
+}
+
+.light-theme .profile-picture {
+  color: #243447;
+}
+
+
+/* =========================================
+   LIGHT SKILLS
+========================================= */
+
+.light-theme #skill {
+  background-color: #dce9f2;
+
+  color: #243447;
+}
+
+.light-theme #skill h2 {
+  color: #243447;
+}
+
+.light-theme .skill-item {
+  background-color: #edf4f8;
+
+  border-color: #4f86c6;
+
+  color: #243447;
+}
+
+.light-theme .skill-item:hover {
+  background-color: #4f86c6;
+
+  border-color: #4f86c6;
+
+  color: white;
+}
+
+
+/* =========================================
+   LIGHT PROJECTS
+========================================= */
+
+.light-theme .project {
+  background-color: #eaf2f8;
+
+  color: #243447;
+}
+
+.light-theme .project h2 {
+  color: #243447;
+}
+
+
+/* Project cards */
+
+.light-theme .project-card {
+  background-color: #f8fbfd;
+
+  border-color: #c5d8e5;
+
+  box-shadow:
+    0 8px 25px
+    rgba(36, 52, 71, 0.10);
+}
+
+.light-theme .project-card:hover {
+  background-color: #f8fbfd;
+
+  border-color: #4f86c6;
+
+  box-shadow:
+    0 12px 30px
+    rgba(79, 134, 198, 0.18);
+}
+
+.light-theme .project-card h3 {
+  color: #243447;
+}
+
+.light-theme .project-card p {
+  color: #52677a;
+}
+
+.light-theme .project-tags {
+  color: #52677a;
+}
+
+.light-theme .tag {
+  border-color: #4f86c6;
+
+  color: #4f86c6;
+}
+
+
+/* =========================================
+   LIGHT PROJECT BUTTONS
+========================================= */
+
+.light-theme .btn {
+  background-color: #4f86c6;
+
+  border-color: #4f86c6;
+
+  color: white;
+}
+
+.light-theme .btn:hover {
+  background-color: #243447;
+
+  border-color: #243447;
+
+  color: white;
+}
+
+
+/* =========================================
+   LIGHT CONTACT
+========================================= */
+
+.light-theme #Contact {
+  background-image:
+    linear-gradient(
+      rgba(218, 234, 244, 0.88),
+      rgba(218, 234, 244, 0.88)
+    ),
+    url("/images/download.jpg");
+
+  color: #243447;
+}
+
+.light-theme .contact-section h2 {
+  color: #243447;
+}
+
+.light-theme #contact-form {
+  background-color: rgba(248, 251, 253, 0.85);
+}
+
+.light-theme .form-group label {
+  color: #243447;
+}
+
+.light-theme .form-group input,
+.light-theme .form-group textarea {
+  background-color: #f8fbfd;
+
+  color: #243447;
+
+  border-color: #b9cfde;
+}
+
+.light-theme .form-group input:focus,
+.light-theme .form-group textarea:focus {
+  border-color: #4f86c6;
+}
+
+
+/* =========================================
+   LIGHT SEND BUTTON
+========================================= */
+
+.light-theme #submit {
+  background-color: #4f86c6;
+
+  color: white;
+}
+
+.light-theme #submit:hover {
+  background-color: transparent;
+
+  border: 2px solid #4f86c6;
+
+  color: #4f86c6;
+}
+
+
+/* =========================================
+   LIGHT FOOTER
+========================================= */
+
+.light-theme footer {
+  background-color: #d2e2ec;
+
+  color: #243447;
+}
+
+.light-theme footer a {
+  color: #243447;
+}
+
+.light-theme footer a:hover {
+  color: #4f86c6;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 15px 20px;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .navlinks {
+    gap: 20px;
+
+    font-size: 15px;
+  }
+
+  #Hero {
+    padding: 100px 20px;
+
+    min-height: 60vh;
+  }
+
+  #Hero h1 {
+    font-size: 42px;
+  }
+
+  #Hero p {
+    font-size: 17px;
+  }
+
+  .about-content {
+    flex-direction: column;
+
+    gap: 30px;
+  }
+
+  .about-text {
+    text-align: center;
+
+    font-size: 20px;
+  }
+
+  #skill {
+    padding: 60px 20px;
+  }
+
+  .skill-grid {
+    gap: 15px;
+  }
+
+  .project {
+    padding: 60px 20px;
+  }
+
+  .Project-grid {
+    padding: 20px 0;
+
+    gap: 25px;
+  }
+
+  #Contact {
+    padding: 60px 20px;
+  }
+
+  #contact-form {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 40px 20px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .navbar {
+    justify-content: center;
+  }
+
+  .navlinks {
+    width: 100%;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+
+  .theme-toggle {
+    position: absolute;
+
+    right: 15px;
+  }
+
+  #Hero h1 {
+    font-size: 35px;
+  }
+
+  .mywork {
+    flex-direction: column;
+
+    gap: 10px;
+
+    width: 200px;
+  }
+
+  .project-card {
+    width: 100%;
+
+    max-width: 300px;
+  }
+
+}
