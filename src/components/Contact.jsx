@@ -1,33 +1,37 @@
 function Contact() {
-
-  function handleSubmit(event) {
-
-    event.preventDefault();
-
-    alert("Message submitted!");
-
-  }
-
   return (
     <section className="contact-section" id="Contact">
 
-      <h2>
-        Get in Touch
-      </h2>
+      <div className="contact-heading">
+
+        <span>GET IN TOUCH</span>
+
+        <h2>Let's Connect</h2>
+
+        <p>
+          Have a question, want to collaborate, or just want to say hello?
+          Feel free to send me a message.
+        </p>
+
+      </div>
 
       <form
         id="contact-form"
-        onSubmit={handleSubmit}
+        action="https://formspree.io/f/mppzanzy"
+        method="POST"
       >
 
         <div className="form-group">
 
-          <label>
+          <label htmlFor="name">
             Name
           </label>
 
           <input
+            id="name"
+            name="name"
             type="text"
+            placeholder="Your name"
             required
           />
 
@@ -35,12 +39,15 @@ function Contact() {
 
         <div className="form-group">
 
-          <label>
+          <label htmlFor="email">
             Email
           </label>
 
           <input
+            id="email"
+            name="email"
             type="email"
+            placeholder="you@example.com"
             required
           />
 
@@ -48,12 +55,15 @@ function Contact() {
 
         <div className="form-group">
 
-          <label>
+          <label htmlFor="message">
             Message
           </label>
 
           <textarea
+            id="message"
+            name="message"
             rows="5"
+            placeholder="Tell me what's on your mind..."
             required
           />
 
@@ -63,7 +73,7 @@ function Contact() {
           type="submit"
           id="submit"
         >
-          Send Message
+          Send Message ↗
         </button>
 
       </form>
